@@ -5,10 +5,14 @@
 * Browsers: last 4 version
 */
 
+/* Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
+
+/* Anchor Tags */
 
 #tribute-link:hover,
 a:hover {
@@ -22,6 +26,8 @@ a {
   text-decoration: none;
   padding: 1rem;
 }
+
+
 
 body {
   background-color: rgb(0, 78, 0);
@@ -39,6 +45,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#title {
+  text-align: center;
+  color: #51fe5c;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 45px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px black;
+}
+
+#tribute-info {
+  color: #51fe5c;
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+  padding: 1rem;
 }
 
 h2 {
@@ -61,26 +83,18 @@ h4 {
   text-shadow: 2px 2px black;
 }
 
-img {
-  width: 400px;
-  max-width: 100%;
-  height: auto;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-#Leonardo {
-  color: #27b1ff;
-  padding-left: 15px;
-}
+/* Profile Styling */
 
 .turtle-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
+}
+
+#Leonardo {
+  color: #27b1ff;
+  padding-left: 15px;
 }
 
 #Donatello {
@@ -118,32 +132,9 @@ img {
           flex-direction: row;
 }
 
-#title {
-  text-align: center;
-  color: #51fe5c;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 45px;
-  text-transform: uppercase;
-  text-shadow: 2px 2px black;
-}
 
-#tribute-info {
-  color: #51fe5c;
-  font-family: 'Acme', sans-serif;
-  font-size: 20px;
-  padding: 1rem;
-}
 
-.turtles-image {
-  display: block;
-  margin: auto;
-}
-
-.turtles-border {
-  border-width: 5px;
-  border-style: solid;
-  border-radius: 50%;
-}
+/* Footer Styling */
 
 #footer {
   width: 100%;
@@ -161,11 +152,39 @@ img {
           align-items: stretch;
 }
 
+/* Footer Link Styling */
+
 #tribute-link {
   color:rgb(0, 78, 0);
   text-decoration: none;
   font-family: 'Acme', sans-serif;
 }
+
+/* Image Styling */
+
+img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.turtles-image {
+  display: block;
+  margin: auto;
+}
+
+.turtles-border {
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+
+/* Mobile View -- 600px and under */
 
 @media (max-width: 600px) {
 
