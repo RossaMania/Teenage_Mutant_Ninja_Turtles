@@ -225,12 +225,12 @@ img {
     color: white;
     font-size: 12px;
     text-shadow: #15b3fc 2px 2px;
-    width: 400px;
+    width: 375px;
   }
 
   #tribute-info {
     color: #51fe5c;
-    font-size: 15px;
+    font-size: 20px;
     padding: 0.5rem;
   }
 
