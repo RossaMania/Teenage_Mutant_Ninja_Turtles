@@ -1,7 +1,7 @@
 .main_page {
     display: grid;
-    grid-template-rows: 25rem 25rem;
-    grid-gap: 10px;
+    grid-template-rows: 40rem 40rem;
+    grid-gap: 1rem;
     grid-template-areas:
       "info-1 video-1"
       "info-2 video-2";
@@ -14,6 +14,25 @@
       grid-area: info-1;
   }
 
+  .cowabunga-collection_description {
+    color: #51fe5c;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+  }
+
+  .cowabunga-collection_list {
+    color: #51fe5c;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+  }
+
+  .game-list {
+    list-style-type: none;
+    color: #51fe5c;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+  }
+
   .video-1 {
     grid-area: video-1;
   }
@@ -22,6 +41,36 @@
     grid-area: info-2;
   }
 
+  .shredder-revenge_description {
+    color: #51fe5c;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+  }
+
+  .shredder-revenge_description2 {
+    color: #51fe5c;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+  }
+
   .video-2 {
     grid-area: video-2;
+  }
+
+
+
+  @media (max-width: 600px) {
+    .main_page {
+        display: grid;
+        grid-template-rows: 50rem 20rem;
+        grid-gap: 2rem;
+        grid-template-areas:
+          "info-1" 
+          "video-1"
+          "info-2" 
+          "video-2";
+        height: 100%;
+        margin: 0;
+        padding: 20px;
+      }
   }
