@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
+body {
+    display: grid;
+    grid-template-rows: 35rem auto fit-content(8rem);
+    grid-gap: 15px;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    height: 100%;
+    margin: 0;
+    background: rgb(0, 78, 0);;
+    width: 100%;
+  }

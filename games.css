@@ -1,0 +1,27 @@
+.main_page {
+    display: grid;
+    grid-template-rows: 25rem 25rem;
+    grid-gap: 10px;
+    grid-template-areas:
+      "info-1 video-1"
+      "info-2 video-2";
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .game-1 {
+      grid-area: info-1;
+  }
+
+  .video-1 {
+    grid-area: video-1;
+  }
+
+  .game-2 {
+    grid-area: info-2;
+  }
+
+  .video-2 {
+    grid-area: video-2;
+  }
