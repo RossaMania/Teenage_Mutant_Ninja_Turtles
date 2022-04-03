@@ -1,38 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    height: 100%;
-    width: 100%;
-  }
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
 
 body {
-    display: grid;
-    grid-template-rows: 35rem auto fit-content(8rem);
-    grid-gap: 15px;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-    height: 100%;
-    margin: 0;
-    background: rgb(0, 78, 0);;
-    width: 100%;
-  }
+  display: grid;
+  grid-template-rows: 35rem auto fit-content(8rem);
+  grid-gap: 15px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  height: 100%;
+  margin: 0;
+  background: rgb(0, 78, 0);
+  width: 100%;
+}
 
 h2 {
-    color: #51fe5c;
-    background: linear-gradient(65deg, red, blue, yellow, magenta);
-    font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
-    text-shadow: 2px 2px black;
-    padding: 5px 10px;
-    text-transform: uppercase;
-    width: 100%;
+  color: #51fe5c;
+  background: linear-gradient(65deg, red, blue, yellow, magenta);
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  text-shadow: 2px 2px black;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.home-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-shadow: 1px 1px black;
+  background-color: gray;
+  box-shadow: 3px 3px black;
+}
+
+@media (max-width: 600px) {
+  a {
+    padding: 0.5rem;
   }
+
+  body {
+    background: linear-gradient(90deg, red, blue, yellow, magenta, red);
+  }
+
+  #box-container-header {
+    background: none;
+  }
+
+  #header {
+    text-align: center;
+  }
+
+  h2 {
+    background: none;
+  }
+
+  .turtle-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  #profile-text {
+    color: white;
+    font-size: 12px;
+    text-shadow: #15b3fc 2px 2px;
+  }
+
+  #tribute-info {
+    color: #51fe5c;
+    font-size: 15px;
+    padding: 0.5rem;
+  }
+}
