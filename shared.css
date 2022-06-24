@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -36,16 +38,79 @@ h2 {
   width: 100%;
 }
 
-.home-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  text-shadow: 1px 1px black;
-  background-color: gray;
-  box-shadow: 3px 3px black;
+.navbar {
+min-height: 70px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 24px;
+background-color: #262626;
+}
+
+.nav-menu {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 60px;
+background-color: #262626;
+}
+
+.nav-items {
+  list-style: none;
+}
+
+.nav-hamburger {
+display: none;
+cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
 @media (max-width: 600px) {
+  .nav-hamburger {
+    display: block;
+  }
+
+  .nav-hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .nav-hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-items{
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
   a {
     padding: 0.5rem;
   }

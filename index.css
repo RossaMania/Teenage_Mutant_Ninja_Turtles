@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 #tribute-link:hover,
 a:hover {
@@ -139,7 +149,7 @@ img {
   a {
     padding: 0.5rem;
   }
-  
+
   body {
     background: linear-gradient(90deg, red, blue, yellow, magenta, red);
   }
