@@ -62,27 +62,27 @@ img {
 
 #Leonardo {
   color: #27b1ff;
-  padding-left: 15px;
+  padding: 16px;
+}
+
+#Donatello {
+  color: #b671ff;
+  padding: 16px;
+}
+
+#Raphael {
+  color: rgb(255, 0, 0);
+  padding: 16px;
+}
+
+#Michelangelo {
+  color: #ffb871;
+  padding: 16px;
 }
 
 .turtle-profile {
   display: flex;
   padding: 1rem;
-}
-
-#Donatello {
-  color: #b671ff;
-  padding-left: 15px;
-}
-
-#Raphael {
-  color: rgb(255, 0, 0);
-  padding-left: 15px;
-}
-
-#Michelangelo {
-  color: #ffb871;
-  padding-left: 15px;
 }
 
 #profile-text {
@@ -93,12 +93,8 @@ img {
   text-transform: uppercase;
   font-size: 15px;
   height: auto;
-  width: 450px;
-  margin-bottom: 5px;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  width: 475px;
+  padding: 15px;
   flex-direction: row;
 }
 
