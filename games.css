@@ -65,9 +65,9 @@
         grid-template-rows: 50rem 20rem;
         grid-gap: 2rem;
         grid-template-areas:
-          "info-1" 
+          "info-1"
           "video-1"
-          "info-2" 
+          "info-2"
           "video-2";
         height: 100%;
         margin: 0;

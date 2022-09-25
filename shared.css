@@ -27,6 +27,22 @@ body {
   width: 100%;
 }
 
+#box-container-header {
+  background: linear-gradient(65deg, red, blue, yellow, magenta);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#title {
+  text-align: center;
+  color: #51fe5c;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px black;
+}
+
 h2 {
   color: #51fe5c;
   background: linear-gradient(65deg, red, blue, yellow, magenta);
@@ -74,7 +90,17 @@ cursor: pointer;
   background-color: white;
 }
 
+#footer {
+  width: 100%;
+  background: #2ddf5c;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 @media (max-width: 600px) {
+
   .nav-hamburger {
     display: block;
   }
@@ -129,23 +155,5 @@ cursor: pointer;
 
   h2 {
     background: none;
-  }
-
-  .turtle-profile {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-  }
-
-  #profile-text {
-    color: white;
-    font-size: 12px;
-    text-shadow: #15b3fc 2px 2px;
-  }
-
-  #tribute-info {
-    color: #51fe5c;
-    font-size: 15px;
-    padding: 0.5rem;
   }
 }

@@ -2,13 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 #tribute-link:hover,
 a:hover {
   color: yellowgreen;
@@ -27,12 +20,7 @@ body {
   margin: 0;
 }
 
-#box-container-header {
-  background: linear-gradient(65deg, red, blue, yellow, magenta);
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
+
 
 h2 {
   color: #51fe5c;
@@ -98,15 +86,6 @@ img {
   flex-direction: row;
 }
 
-#title {
-  text-align: center;
-  color: #51fe5c;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 45px;
-  text-transform: uppercase;
-  text-shadow: 2px 2px black;
-}
-
 #tribute-info {
   color: #51fe5c;
   font-family: 'Acme', sans-serif;
@@ -125,14 +104,7 @@ img {
   border-radius: 50%;
 }
 
-#footer {
-  width: 100%;
-  background: #2ddf5c;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
+
 
 #tribute-link {
   color:rgb(0, 78, 0);
@@ -148,10 +120,6 @@ img {
 
   body {
     background: linear-gradient(90deg, red, blue, yellow, magenta, red);
-  }
-
-  #box-container-header {
-    background: none;
   }
 
   #header {
@@ -172,6 +140,7 @@ img {
     color: white;
     font-size: 12px;
     text-shadow: #15b3fc 2px 2px;
+    width: 90%;
   }
 
   #tribute-info {
