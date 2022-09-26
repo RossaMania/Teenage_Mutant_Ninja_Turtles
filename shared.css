@@ -15,7 +15,7 @@ html {
 
 body {
   display: grid;
-  grid-template-rows: 35rem auto fit-content(8rem);
+  grid-template-rows: 30rem auto fit-content(8rem);
   grid-gap: 15px;
   grid-template-areas:
     "header"
@@ -25,6 +25,19 @@ body {
   margin: 0;
   background: rgb(0, 78, 0);
   width: 100%;
+}
+
+#tribute-link:hover,
+a:hover {
+  color: yellowgreen;
+  text-shadow: 2px 2px black;
+}
+
+a {
+  color: rgb(0, 255, 13);
+  font-family: "Acme", sans-serif;
+  text-decoration: none;
+  padding: 1rem;
 }
 
 #box-container-header {
@@ -37,7 +50,7 @@ body {
 #title {
   text-align: center;
   color: #51fe5c;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 36px;
   text-transform: uppercase;
   text-shadow: 2px 2px black;
@@ -55,20 +68,20 @@ h2 {
 }
 
 .navbar {
-min-height: 70px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0 24px;
-background-color: #262626;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: #262626;
 }
 
 .nav-menu {
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 60px;
-background-color: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  background-color: #262626;
 }
 
 .nav-items {
@@ -76,8 +89,8 @@ background-color: #262626;
 }
 
 .nav-hamburger {
-display: none;
-cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .bar {
@@ -90,6 +103,13 @@ cursor: pointer;
   background-color: white;
 }
 
+.logo {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  flex-direction: row;
+}
+
 #footer {
   width: 100%;
   background: #2ddf5c;
@@ -99,8 +119,28 @@ cursor: pointer;
   align-items: stretch;
 }
 
-@media (max-width: 600px) {
+#tribute-info {
+  color: #51fe5c;
+  font-family: "Acme", sans-serif;
+  font-size: 20px;
+  padding: 1rem;
+}
 
+.turtles-image {
+  display: block;
+  margin: auto;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+#tribute-link {
+  color: rgb(0, 78, 0);
+  text-decoration: none;
+  font-family: "Acme", sans-serif;
+}
+
+@media (max-width: 600px) {
   .nav-hamburger {
     display: block;
   }
@@ -129,7 +169,7 @@ cursor: pointer;
     transition: 0.3s;
   }
 
-  .nav-items{
+  .nav-items {
     margin: 16px 0;
   }
 
