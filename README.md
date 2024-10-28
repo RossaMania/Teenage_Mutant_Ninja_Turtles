@@ -1,3 +1,5 @@
+Thank you for checking out my project! Connect with me on LinkedIn! https://www.linkedin.com/in/ross-clettenberg/
+
 # Teenage Mutant Ninja Turtles
 
 My first website. This website is based on the Teenage Mutant Ninja Turtles original arcade game attract screen. 
